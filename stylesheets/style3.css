@@ -605,11 +605,27 @@ a{
 }
 
 @media screen and (max-width:1000px){
+    body{
+        font-family: montserrat, sans-serif;
+    }
     header{
         display: block;
         width: 100%;
         height: 4.5rem;
         padding: 0;
+    }
+    #home p{
+        font-size: 15vw;
+        font-weight: 1000;
+        text-align: center;
+        font-family: montserrat;
+        margin: 100px 0 50px 0;
+        padding: 50px 50px;
+        color: rgba(255,255,255,.1);
+        background-image: url("../images/ryba2.png");
+        background-repeat: repeat-x;
+        -webkit-background-clip: text;
+        animation: animate 15s linear infinite;
     }
     
     #logoBox{
@@ -644,6 +660,11 @@ a{
         display: none;
         transition: 0.5s;
         font-family: montserrat, sans-serif;
+    }
+    .hidden{
+        transform: none;
+        box-shadow: none;
+    
     }
     #nav1{
         display: none;
@@ -761,6 +782,13 @@ a{
 
     .circle{
         margin: 0 auto;
+    }
+    .text span{
+        position: absolute;
+        left: 50%;
+        font-size: 2em;
+        transform-origin: 0 175px;
+        font-family: consolas;
     }
     #form{
         padding: 20px 20px;
