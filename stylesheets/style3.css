@@ -1,0 +1,833 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+html{
+    overflow-x: hidden;
+
+    width: 100%;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: montserrat, sans-serif;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    --header-height: 40px;
+    padding-top: var(--header-height);
+    width: 100%;
+}
+header{
+    display: flex;
+    padding: 20px 30px 20px 30px;
+    /*box-shadow: 0px 0px 5px 0px rgba(255,255,255,0.5); */
+    height: var(--header-height);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform 0.3s;
+    background-color: black;
+    box-shadow: none;
+    z-index: 7;
+}
+
+.hidden{
+    transform: translateY(calc(-2 * var(--header-height)));
+    box-shadow: none;
+
+}
+
+header h3{
+    display: inline-block;
+    margin: 3px;
+    font-size: 2rem;
+}
+#logoBox{
+    display: flex;
+    transition: all 0.5s;
+}
+#logoBox:hover{
+    transform: translateX(-10px);
+}
+header button{
+    margin-left: auto;
+    margin-right: 50px;
+    padding: 10px 15px;
+    height: 40px;
+    display: inline-block;
+    font-style: italic;
+}
+#resume {
+    transition: all 0.5s;
+    border-radius: 25px;
+    background-color: #4aa3ff;
+    color: white;
+    border: 0;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+#resume:hover{
+    transform: translateX(-10px);
+    color: darkslategray;
+    background-color: white;
+}
+nav{
+    margin: 5px 2vw 0 auto;
+
+}
+header li{
+    display: inline;
+    text-decoration: none;
+    margin: 0 0.5vw 0 0.5vw;
+    padding: 5px 15px;
+    letter-spacing: 2px;
+    font-size: 12px;
+}
+#navbar li a{
+    transition: all 0.3s;
+    display: inline-block;
+}
+#navbar li a:hover{
+    transform: translateX(-10px);
+    color: rgba(74,163,255,0.3);
+}
+#navbar li a{
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+
+}
+#home2{
+    display: none;
+}
+#home p{
+    font-size: 15vw;
+    font-weight: 1000;
+    text-align: center;
+    font-family: montserrat;
+    margin: 100px 0 50px 0;
+    padding: 50px 50px;
+    color: rgba(255,255,255,.1);
+	background-image: url("../images/ryba2.png");
+	background-repeat: repeat-x;
+	-webkit-background-clip: text;
+	animation: animate 15s linear infinite;
+}
+.button.show {
+    display: block;
+  }
+
+  /*
+#vision, #mission, #goal{
+    display: ;
+} */
+
+@keyframes animate {
+	0%{
+		background-position: left 0 top 50%;
+	}
+	20%{
+		background-position: left 800PX top -50%;
+	}
+	40%{
+		background-position: left 1800px top -60%;
+	}
+	60%{
+		background-position: left 2400px top -80%;
+	}
+	80%{
+		background-position: left 3400px top -50%;
+	}
+	100%{
+		background-position: left 4400px top 50%;
+	}
+}
+#aboutMe {
+    display: flex;
+    background-color: #171717;
+    padding: 100px 0;
+
+
+}
+h2{
+    font-size: 20px;
+}
+.aboutButton{
+    padding: 2px 2px;
+    background: transparent;
+    color: white;
+    cursor: default;
+
+}
+    
+
+#aboutMe h2{
+    margin-bottom: 30px;
+}
+
+#aboutMe P{
+    line-height: 25px;
+    margin: 10px 0;
+}
+#aboutMeText{
+    width: 50%;
+    padding: 20px 20px;
+}
+#aboutMeImage{
+    width: 50%;
+    background: url(../images/portfolio\ web\ image@0\,5x.png) no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 20px 10px;
+}
+
+#aboutMeText p{
+    margin-bottom: 20px;
+}
+#aboutImage{
+    width: 100%;
+}
+.myMotto{
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+}
+.myMotto h2{
+    padding: 10px 0;
+}
+#aboutMeImageText{
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    padding: 20px 20px;
+}
+
+@keyframes move-up {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(100%);
+    }
+}
+
+@keyframes up-down {
+    from{
+        transform: translateY(-2px)
+
+    }
+    to {
+        transform: translateY(2px);
+
+    }
+    
+}
+#aboutMeImageText h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+#myProject{
+    padding: 100px 0px;
+}
+#myProjectDescription{
+    display: flex;
+    margin-bottom: 50px;
+}
+.myProjectDescription{
+    width: 50%;
+    padding: 0 20px;
+}
+#myProject h2{
+    margin: 0 20px 20px 0;
+    padding-left: 20px;
+}
+
+.myProjectDescription h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+.myProjectDescription p{
+    line-height: 25px;
+}
+#projectImage{
+    display: flex;
+    overflow: hidden;
+    padding: 10px 10px;
+}
+.projectImage{
+    width: 33.33vw;
+    display: block;
+    
+}
+.projectImage img{
+    width: 100%;
+    height: 80%;
+}
+.hide {
+    display: none;
+  }
+  .button-container {
+    display: flex;
+    z-index: 6; /* Set z-index to 2 */
+    margin-top: 60px;
+    position: absolute;
+    justify-content: space-between;
+    width: 100%;
+    
+  }
+
+  .button-container button{
+    border-radius: 50%;
+    padding: 1px 10px;
+    font-size: 50px;
+    font-weight: 600;
+    border: none;
+    opacity: 0.5;
+  }
+  
+  #prev-btn {
+    order: 2;
+  }
+  
+  #next-btn {
+    order: 1;
+    
+  }
+.imageDescription{
+    padding: 10px 10px;
+    border: 0.5px solid white;
+    margin: 5px 5px;
+    text-align: center;
+}
+
+.imageDescription:hover{
+    background-color: aquamarine;
+    transition: 2s;
+}
+#contact{
+    display: flex;
+    padding: 50px 20px;
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.5);
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+.contact1{
+    width: 50%;
+    padding: 20px 20px;
+}
+#contact-Message{
+    text-align: center;
+    line-height: 25px;
+    margin-bottom: 30px;
+}
+.contact1 h2{
+    text-align: center;
+    margin: 0 0 20px 0;
+    opacity: 0.5;
+}
+#form{
+    width: 100%;
+    
+}
+.formSubmit{
+    text-align: center;
+}
+/* Rotational name & analogue clock */
+
+.clock
+{
+width: 250px;
+height: 250px;
+display: flex;
+justify-content: center;
+align-items: center;
+background: url(../images/clock.webp);
+background-size: cover;
+background-color: white;
+border-radius: 50%;
+}
+.clock::before
+{
+content: '';
+position: absolute;
+width: 15px;
+height: 15px;
+background: red;
+border-radius: 50%;
+z-index: 5;
+}
+.clock .hour,
+.clock .min,
+.clock .sec
+{
+position: absolute;
+}
+.clock .hour, .hr
+{
+width: 140px;
+height: 140px;
+}
+.clock .min, .mn
+{
+width: 170px;
+height: 170px;
+}
+.clock .sec, .sc
+{
+width: 210px;
+height: 210px;
+}
+.hr, .mn, .sc
+{
+display: flex;
+justify-content: center;
+/* align-items: center; */
+position: absolute;
+border-radius: 50%;
+}
+.hr:before
+{
+content: '';
+position: absolute;
+width: 6px;
+height: 70px;
+background: black;
+z-index: 2;
+border-radius: 6px 6px 0 0;
+}
+.mn:before
+{
+content: '';
+position: absolute;
+width: 4px;
+height: 90px;
+background: black;
+z-index: 3;
+border-radius: 6px 6px 0 0;
+}
+.sc:before
+{
+content: '';
+position: absolute;
+width: 2px;
+height: 140px;
+background: black;
+z-index: 4;
+border-radius: 6px 6px 0 0;
+}
+.circle{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    /* background: #ccc; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blue;
+    margin: 0 auto;
+}
+.text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: rotateText 10s linear infinite;
+    color: white;
+}
+@keyframes rotateText{
+    0%{
+        transform: rotate(360deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.text span{
+    position: absolute;
+    left: 50%;
+    font-size: 2em;
+    transform-origin: 0 175px;
+    font-family: consolas;
+}
+/* End of clock */
+
+.label{
+    display: block;
+}
+.info{
+    display: block;
+    width: 80%;
+    height: 30px;
+    border: 1px rgba(255,255,255,0.5) solid;
+    background-color: transparent;
+    border-radius: 25px;
+    margin: 10px 10px;
+    padding: 5px 5px;
+    text-align: center;
+    color: white;
+}
+.formSubmit{
+    width: 80%;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    font-size: 15px;
+    font-weight: 300;
+    margin: 20px 10px 0 10px;
+    padding: 5px 5px;
+
+}
+.formSubmit:hover{
+    color: white;
+    background-color: rgba(255,255,255,0.5);
+}
+
+#message{
+    display: block;
+    width: 80%;
+    height: 150px;
+    border: 1px rgba(255,255,255,0.5) solid;
+    background-color: transparent;
+    border-radius: 25px;
+    margin: 10px 0;
+    padding: 10px 10px;
+    color: white;
+
+}
+
+footer{
+    padding-top: 50px;
+}
+#footer{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#footer h1, #footer p{
+    display: inline-block;
+    text-align: center;
+    padding: 20px 20px;
+}
+#contactMe{
+    margin: 0px auto;
+    text-align: center;
+    padding: 50px 50px 0 50px;
+}
+svg{
+    fill:white;
+    height: 30px;
+    width: 30px;
+    justify-content: space-evenly;
+    margin: 0px 20px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+svg:hover{
+    fill: darkslategray;
+    transform: translateX(-5px);
+    transform: translateX(5px);
+    stroke: darkslategray;
+}
+
+#mySignature {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    font-size: 15px;
+    opacity: 0.5;
+}
+
+.js-scroll {
+    opacity: 0;
+    transition: opacity 500ms;
+  }
+  
+  .js-scroll.scrolled {
+    opacity: 1;
+  }
+
+  .scrolled.fade-in-bottom {
+    animation: fade-in-bottom 1s ease-in-out both;
+  }
+
+@keyframes fade-in-bottom {
+    0% {
+      -webkit-transform: translateY(100px);
+      transform: translateY(100px);
+      opacity: 0;
+    }
+    100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  .footer-nav{
+    transition: all 0.5s;
+    cursor: pointer;
+
+  }
+
+.footer-nav:hover{
+    transform: translateX(-10px);
+    color: rgba(74,163,255,0.3);
+}
+#myProjectDescription1{
+    border-right: 1px solid rgba(255, 255, 255, 0.5); 
+}
+header #navIcon{
+    display: none;
+}
+.contact1:nth-child(1){
+    border-right: 1px solid rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#resume2{
+    display: none;
+}
+#navIconOpen{
+    display: none;
+}
+#smallNav{
+    display: none;
+}
+#socialsHandleNav{
+    display: none;
+}
+#projectImage1{
+    display: none;
+}
+
+@media screen and (max-width:1000px){
+    header{
+        display: block;
+        width: 100%;
+        height: 4.5rem;
+        padding: 0;
+    }
+    
+    #logoBox{
+        width: 100%;
+        display: flex;
+        padding: 10px 10px;
+        transition: none;
+        justify-content: center;
+        align-items: center;
+    }
+    #logoBox:hover{
+        transform: none;
+    }
+    #logo{
+        padding: 0;
+        margin: 0;
+    }
+    #logoBox h3{
+        font-size: 1.8em;
+    }
+    #smallNav{
+        z-index: 100;
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: calc(-1 * var(--header-height));
+        text-align: center;
+        background-color: black;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        padding: 50px 0;
+        display: none;
+        transition: 0.5s;
+        font-family: montserrat, sans-serif;
+    }
+    #nav1{
+        display: none;
+    }
+    .navbar{
+        margin: 10vw 0;
+        height: 80%;
+    }
+    #navIconOpen{
+        display: block;
+    }
+    #resume{
+        display: none;
+    }
+    #resume2{
+        display: block;
+        border-radius: 25px;
+        background-color: #4aa3ff;
+        color: white;
+        border: 0;
+        font-style: italic;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: 600;
+        font-size: 15px;
+        height: 30vh;
+    }
+    #smallNav button{
+        margin: 0 auto;
+        padding: 10px 15px;
+        height: 40px;
+        display: inline-block;
+        font-style: italic;
+    }
+    #aboutMe{
+        display: block;
+        width: 100%;                                                                                                                                                        ;
+        padding: 50px 0 0 0;
+        margin: 0;
+
+    }
+    #aboutMeText{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    #aboutMeText p, #aboutMeText h2, #aboutMeText h1{
+        padding: 0 20px;
+    }
+    .button-container{
+        display: none;
+    }
+    #aboutMeImage{
+        width: 100%;
+    }
+    #myProjectDescription{
+        display: block;
+    }
+    .myProjectDescription{
+        width: 90%;
+        border-right: none;
+    }
+    #myProjectDescription1{
+        border-right: none;
+        margin-bottom: 30px;
+    }
+    #projectImage{
+        display: none;
+    }
+    #projectImage1{
+        display: block;
+        overflow: hidden;
+        padding: 10px 10px;
+    }
+    .projectImage1{
+        width: 100%;
+        display: block;
+        
+    }
+    .projectImage1 img{
+        width: 100%;
+        height: 80%;
+    }
+    .imageDescription1{
+        padding: 10px 10px;
+        border: 0.5px solid white;
+        margin: 5px 5px;
+        text-align: center;
+        animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+        0%, 20%, 50%, 80%, 100% {
+          transform: translateY(0);
+        }
+        40% {
+          transform: translateY(-5px);
+        }
+        60% {
+          transform: translateY(-2px);
+        }
+    }
+    #contact{
+        text-align: unset;
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .contact1{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0 0 30px 0;
+        text-align: unset;
+    }
+
+    .circle{
+        margin: 0 auto;
+    }
+    #form{
+        padding: 20px 20px;
+    }
+    #footer .footer-nav{
+        display: none;
+    }
+    #home{
+        display: block;
+    }
+    #home2{
+        display: none;
+    }
+    #contact-Message{
+        margin: 0 5px;
+    }
+    #navIconOpen{
+        cursor: pointer;
+    }
+    
+    header #navIcon{
+        margin-left: auto;
+        display: inline;
+        font-size: 1.3rem;
+        padding-right: 20px;
+        cursor: pointer;
+    
+    }
+    .contact1:nth-child(1){
+        border-right: 0;
+        margin: 0;
+    }
+    #socialsHandleNav{
+        display: block;
+        margin-top: 10vh;
+    }
+
+}
+@media screen and (max-width:500px){
+    #home{
+        display: none;
+    }
+    #home2{
+        display: block;
+    }
+    #home2 p{
+        font-size: 25vw;
+        font-weight: 1000;
+        font-family: montserrat;
+        margin: 50px 0 50px 0;
+        padding: 50px 50px;
+        color: rgba(255,255,255,.1);
+        background-image: url("../images/ryba2.png");
+        background-size: cover;
+        background-repeat: repeat-x;
+        -webkit-background-clip: text;
+        animation: animate 15s linear infinite;
+        letter-spacing: 2vw;
+        line-height: 21.5vw;
+    }
+    #es{
+        font-size: 35vw;
+    }
+    #ign{
+        font-size: 35vw;
+    }
+
+}  
+
+

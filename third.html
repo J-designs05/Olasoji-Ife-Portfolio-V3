@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+        <title>Olasoji Ife Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="stylesheets/style3.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+        <nav id="smallNav">
+            <ul id="navbar">
+                <div id="navIconOpen"><h1 onclick="nav_close()">&#10005;</h1></div>
+                <li onclick="nav_close()" class="navbar"><a href="#homw">01. Home</a></li>
+                <li onclick="nav_close()" class="navbar"><a href="#aboutMe">02. About</a></li>
+                <li onclick="nav_close()" class="navbar"><a href="#myProject">03. Project</a></li>
+                <li onclick="nav_close()" class="navbar"><a href="#contact">04. Contact</a></li>
+            </ul>
+            <a><button id="resume2">Resume &#8594</button></a>
+            <div id="socialsHandleNav">
+                <a href="#"><?xml version="1.0" ?><svg class="bi bi-github" fill="currentColor" height="30" viewBox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                <a href="#"><?xml version="1.0" ?><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+                <a href="#"><?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill-rule="nonzero"/></g></svg></a>
+            </div>
+        </nav>
+        <header>
+            <div id="logoBox">
+                <img id="logo" src="images/logo.png" alt="logo">
+                <h3>J.Designs</h3>
+                <diV id="navIcon" ><h1 onclick="nav_open()">&#8801;</h1></diV>
+            </div>
+            <nav id="nav1">
+                <ul id="navbar">
+                    <div id="navIconOpen"><h1 onclick="nav_close()">&#10005;</h1></div>
+                    <li onclick="nav_close()" class="navbar"><a href="#homw">01. Home</a></li>
+                    <li onclick="nav_close()" class="navbar"><a href="#aboutMe">02. About</a></li>
+                    <li onclick="nav_close()" class="navbar"><a href="#myProject">03. Project</a></li>
+                    <li onclick="nav_close()" class="navbar"><a href="#contact">04. Contact</a></li>
+                </ul>
+                <a><button id="resume2">Resume &#8594</button></a>
+            </nav>
+            <a><button id="resume">Resume &#8594</button></a>
+        </header>
+        <main>
+            <section id="home">
+                <p>J.DESIGN</p>
+
+            </section>
+            <section id="home2">
+                <p>J.D<br><span id="es">ES</span><br><span id="ign">IGN</span></p>
+
+            </section>
+            <section id="aboutMe">
+                <div id="aboutMeText">
+                    <h2 style="color: rgba(255, 255, 255, 0.5);">ABOUT ME</h2>
+                    <h1>I'm a front end developer.</h1>
+                    <p class="js-scroll fade-in-bottom">My name is James Olasoji, I am creative front end developer/web developer. I am passionate about leveraging my diverse backgrounds to decipher challenging problems and create delightful experiences. I develop websites with HTML, CSS JavaScript and React.</p>
+                    <div class="myMotto">
+                        <h2 class="aboutButton" id="visionButton">&#11166; My Vision</h2>
+                        <p id="vision">Creating the highest efficiency, to handle presentational changes through CSS updates and behavior through JavaScript / react updates. Writing HTML, design-agnostic as it should be, as a front end developer i want to solve peoples problems and real world problem making life easier for the everyday man through codes.</p>
+                    </div>
+                    <div class="myMotto">
+                        <h2 class="aboutButton" id="missionButton">&#11166; My Mission</h2>
+                        <p id="mission">My mission is to ensure the best relationship with our clients, both during and after their goals have been met and create a web site that is suitable for their needs.</p>
+                    </div>
+                    <div class="myMotto">
+                        <h2 class="aboutButton" id="goalButton">&#11166; My Goal</h2>
+                        <P id="goal">The main objective when working as a developer is to be productive and deliver value to the company and solve problems. As a front end developer , the aim is to build practical applications/web that will be 100% successful.</P>
+                    </div>
+                    
+                    
+                </div>
+                <div id="aboutMeImage"> 
+                    <diV id="aboutMeImageText" class="js-scroll fade-in-bottom">
+                        <h1>1+</h1>
+                        <h2>Year of experience</h2>
+
+                    </diV>
+                    
+                </div>
+            
+            </section>
+            <section id="myProject">
+                <h2 style="color: rgba(255, 255, 255, 0.5);">MY PROJECT</h2>
+                <div id="myProjectDescription">
+                    <div id="myProjectDescription1" class="myProjectDescription">
+                        
+                        <h1 class="js-scroll fade-in-bottom">Projects I have<br> worked on.</h1>
+                    </div>
+                    <div class="myProjectDescription js-scroll fade-in-bottom">
+                        <p>Over the span of few months i've worked
+                            on some projects, using javascript and React js to build webapps with css.
+                        </p>
+                    </div>
+                </div>
+                <div class="button-container">
+                    <button onclick="restartAnimation()" id="prev-btn">&#62; </button>
+                    <button onclick="restartAnimation()" id="next-btn">&#60; </button>
+                </div>
+                <div id="projectImage">
+                    <div class="projectImage">
+                        <img src="images/todotask.PNG">
+                        <a href="#"><div class="imageDescription"> <p>Todo Task App</p></div>
+
+
+                    </div>
+                    <div class="projectImage">
+                        <img src="images/law firm.PNG">
+                        <a href="#"><div class="imageDescription"> <p>Law Firm Website</p></div></a>
+
+                    </div>
+                    <div class="projectImage">
+                        <img src="images/calculator.PNG">
+                        <a href="#"><div class="imageDescription"> <p>calculator</p></div></a>
+
+                    </div>
+                    <div class="projectImage">
+                        <img src="images/ozz.PNG">
+                        <a href="#"><div class="imageDescription"> <p>Ozzy's Place Website</p></div></a>
+
+                    </div>
+                    <div class="projectImage">
+                        <img src="images/pricelist.PNG">
+                        <a href="#"><div class="imageDescription"><p> Ozzy's Place Pricelist</p> </div></a>
+
+                    </div>
+
+                </div>
+                <div id="projectImage1">
+                    <div class="projectImage1 js-scroll fade-in-bottom">
+                        <img src="images/todotask.PNG">
+                        <a href="#"><div class="imageDescription1"> <p>Todo Task App</p></div>
+
+                    </div>
+                    <div class="projectImage1 js-scroll fade-in-bottom">
+                        <img src="images/law firm.PNG">
+                        <a href="#"><div class="imageDescription1"> <p>Law Firm Website</p></div></a>
+
+                    </div>
+                    <div class="projectImage1 js-scroll fade-in-bottom">
+                        <img src="images/calculator.PNG">
+                        <a href="#"><div class="imageDescription1"> <p>calculator</p></div></a>
+
+                    </div>
+                    <div class="projectImage1 js-scroll fade-in-bottom">
+                        <img src="images/ozz.PNG">
+                        <a href="#"><div class="imageDescription1"> <p>Ozzy's Place Website</p></div></a>
+
+                    </div>
+                    <div class="projectImage1 js-scroll fade-in-bottom">
+                        <img src="images/pricelist.PNG">
+                        <a href="#"><div class="imageDescription1"><p> Ozzy's Place Pricelist</p> </div></a>
+
+                    </div>
+
+                </div>
+            
+            </section>
+            <section id="contact">
+                <div class="contact1">
+                    <h2>Why waste time<br>Send me a message</h2>
+                    
+                    <div class="circle">
+                        <div class="clock">
+                            <div class="hour">
+                              <div class="hr" id="hr"></div>
+                            </div>
+                            <div class="min">
+                              <div class="mn" id="mn"></div>
+                            </div>
+                            <div class="sec">
+                              <div class="sc" id="sc"></div>
+                            </div>
+                        </div>
+                        <div class="text"> 
+                            <p>- Olasoji James - Frontend Web Developer</p>
+                        </div>
+                        
+                    </div>
+            
+
+                </div>
+                <div class="contact1">
+                    <h2>Get In Touch</h2>
+                    <p id="contact-Message">I’m currently looking for new opportunities, my inbox is
+                        open. Whether you have a question or just want to say hi, I’ll
+                        try my best to get back to you! Say hello</p>
+
+                        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+                            <input type="hidden" name="access_key" value="bc846876-7765-4ad2-aa4d-ea81769ed9ba">
+                            <label class="label js-scroll fade-in-bottom" for="name">Name: <input class="info" name="name" type="text" id="name" required></label>
+                            <label class="label js-scroll fade-in-bottom" for="email">Email: <input class="info" name="email" type="email" id="email" required></label>
+                            <label class="label js-scroll fade-in-bottom" for="message">Message: <textarea id="message" name="message" rows="3" cols="30" placeholder="Send me a message..." required></textarea></label>
+                            <div class="h-captcha js-scroll fade-in-bottom" data-captcha="true"></div>
+                            <button type="submit" class="formSubmit js-scroll fade-in-bottom">Submit</button>
+        
+                        </form>
+                </div>
+                
+            </section>
+            <footer>
+                <div id="footer">
+                    <a href="#home"><p class="footer-nav">Home</p></a>
+                    <a href="#aboutMe"><p class="footer-nav">About</p></a>
+                    <div style="text-align: center;">
+                        <h1 style="color: rgba(255, 255, 255, 0.5);">J.Design</h1><br>
+                        <p>"The only reason for time is so that<br> everything doesnt happen at once."</p>  
+                    </div>
+                    <a href="#myProject"><p class="footer-nav">Work</p></a>
+                    <a href="#contact"><p class="footer-nav">Contact</p></a>
+
+                </div>
+                <div id="contactMe">
+                    <div id="socialsHandle">
+                        <a href="#"><?xml version="1.0" ?><svg class="bi bi-github" fill="currentColor" height="30" viewBox="0 0 16 16" width="30" xmlns="http://www.w3.org/2000/svg"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                        <a href="#"><?xml version="1.0" ?><svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title/><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg></a>
+                        <a href="#"><?xml version="1.0" ?><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 0h24v24H0z" fill="none"/><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002zM7 8.48H3V21h4V8.48zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-4 4.77 0V21H22v-7.93c0-6.17-7.06-5.94-8.72-2.91l.04-1.68z" fill-rule="nonzero"/></g></svg></a>
+                    </div>
+                    <p style="margin-bottom: 10px; margin-top: 20px;" id="mySignature">designed by J.designs</p>
+                </div>
+                    
+
+            </footer>
+            <span></span>
+        </main>  
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="script/third.js">
+            
+        </script>  
+
+             
+
+    </body>
+
+</html>
