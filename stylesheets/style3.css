@@ -119,10 +119,6 @@ header li{
     display: block;
   }
 
-  /*
-#vision, #mission, #goal{
-    display: ;
-} */
 
 @keyframes animate {
 	0%{
@@ -159,8 +155,6 @@ h2{
     background: transparent;
     color: white;
     cursor: default;
-    font-family: 'Times New Roman', Times, serif;
-
 }
     
 
