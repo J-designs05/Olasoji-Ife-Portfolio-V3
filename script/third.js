@@ -57,11 +57,11 @@ document.getElementById("visionButton").addEventListener("click", function(){
   
   if (sectionVision.style.display === "none") {
     sectionVision.style.display = "block";
-    buttonVision.innerHTML = "&#11167; My Vision";
+    buttonVision.innerHTML = "&#x25BC; My Vision";
 
   }else {
     sectionVision.style.display = "none";
-    buttonVision.innerHTML = "&#11166; My Vision";
+    buttonVision.innerHTML = "► My Vision";
 
   }
   
@@ -80,11 +80,11 @@ document.getElementById("missionButton").addEventListener("click", function(){
   
   if (section.style.display === "none") {
     section.style.display = "block";
-    buttonMission.innerHTML = "&#11167; My Mission";
+    buttonMission.innerHTML = "&#x25BC; My Mission";
 
   }else {
     section.style.display = "none";
-    missionButton.innerHTML = "&#11166; My Mission";
+    missionButton.innerHTML = "► My Mission";
   }
   
 });
@@ -102,12 +102,12 @@ document.getElementById("goalButton").addEventListener("click", function(){
   if (sectionGoal.style.display === "none") {
     
     sectionGoal.style.display = "block";
-    buttonGoal.innerHTML = "&#11167; My Goal";
+    buttonGoal.innerHTML = "&#9660; My Goal";
 
   }else {
     
     sectionGoal.style.display = "none";
-    buttonGoal.innerHTML = "&#11166; My Goal";
+    buttonGoal.innerHTML = "► My Goal";
 
   }
   
