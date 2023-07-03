@@ -828,7 +828,7 @@ a{
     #home2{
         display: block;
     }
-    #home2 p{
+    #home2 h1{
         font-size: 25vw;
         font-weight: 1000;
         margin: 50px 0 50px 0;
@@ -840,14 +840,11 @@ a{
         -webkit-background-clip: text;
         animation: animate 15s linear infinite;
         letter-spacing: 0.1vw;
-        line-height: 23vw;
+        line-height: 24vw;
     }
-    #es{
-        font-size: 25vw;
-    }
+
     #ign{
-        margin-top: 2px;
-        font-size: 35vw;
+        font-size: 32vw;
     }
 
 }  
